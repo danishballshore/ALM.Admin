@@ -1,0 +1,8 @@
+/.vs
+*.zip
+*.gz
+*.tar
+*.bz
+*.7z
+*.rar
+*.jar

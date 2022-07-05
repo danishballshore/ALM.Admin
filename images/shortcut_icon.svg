@@ -1,0 +1,12 @@
+<svg id="shrocut_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_319" data-name="Rectangle 319" width="12" height="12" fill="#686868"/>
+    </clipPath>
+  </defs>
+  <g id="Group_839" data-name="Group 839" clip-path="url(#clip-path)">
+    <path id="Path_292" data-name="Path 292" d="M8.309,12.671H2.374A2.307,2.307,0,0,1,0,10.3V4.361A2.307,2.307,0,0,1,2.374,1.987l4.152-.018.006,1.187-4.155.018a1.118,1.118,0,0,0-1.19,1.187V10.3a1.118,1.118,0,0,0,1.187,1.187H8.309A1.117,1.117,0,0,0,9.5,10.3V6.142h1.187V10.3a2.307,2.307,0,0,1-2.374,2.374" transform="translate(0 -0.8)" fill="#686868"/>
+    <rect id="Rectangle_318" data-name="Rectangle 318" width="10.885" height="1.187" transform="translate(3.141 7.85) rotate(-44.838)" fill="#686868"/>
+    <path id="Path_293" data-name="Path 293" d="M17.155,4.155H15.968V1.187H13V0h4.155Z" transform="translate(-5.284)" fill="#686868"/>
+  </g>
+</svg>

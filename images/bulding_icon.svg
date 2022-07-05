@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.364" height="11.21" viewBox="0 0 12.364 11.21">
+  <g id="bulding_icon" transform="translate(0 -23.895)">
+    <g id="Group_821" data-name="Group 821" transform="translate(9.788 25.142)">
+      <path id="Path_276" data-name="Path 276" d="M405.328,153.611v8.078H407.9v-8.078Zm.918,1.487h.724v.724h-.724Zm.724,3.995h-.724v-.724h.724Zm.01-1.635h-.724v-.724h.724Z" transform="translate(-405.328 -151.725)" fill="#898889"/>
+      <path id="Path_277" data-name="Path 277" d="M405.549,75.514h2.571v1.162h-2.571Z" transform="translate(-405.544 -75.514)" fill="#898889"/>
+    </g>
+    <path id="Path_278" data-name="Path 278" d="M0,47.46V58.1H2.588V48.2Zm.931,2.417h.724V50.6H.931Zm.725,5.63H.932v-.724h.724Zm0-1.635H.932v-.724h.724Zm0-1.635H.936v-.724h.724Z" transform="translate(0 -22.996)" fill="#898889"/>
+    <g id="Group_822" data-name="Group 822" transform="translate(3.38 23.895)">
+      <path id="Path_279" data-name="Path 279" d="M211,405.605h.724V407.6H211Z" transform="translate(-209.285 -396.387)" fill="#898889"/>
+      <path id="Path_280" data-name="Path 280" d="M271,405.605h.724V407.6H271Z" transform="translate(-267.836 -396.387)" fill="#898889"/>
+      <path id="Path_281" data-name="Path 281" d="M139.97,23.895v11.21h.991V32.388h3.622v2.717h1.07V23.895Zm1.715,7.407h-.724V29.762h.724Zm0-2.264h-.724V27.5h.724Zm0-2.264h-.724V25.234h.724Zm1.449,4.528h-.724V29.762h.724Zm0-2.264h-.724V27.5h.724Zm0-2.264h-.724V25.234h.724Zm1.449,4.528h-.724V29.762h.724Zm0-2.264h-.724V27.5h.724Zm0-2.264h-.724V25.234h.724Z" transform="translate(-139.97 -23.895)" fill="#898889"/>
+    </g>
+  </g>
+</svg>
