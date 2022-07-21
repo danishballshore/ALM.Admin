@@ -13,9 +13,10 @@
 <header>
     <div class="container-fluid header_bg">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col-12">
                 <img class="logo_img" src="images/ALS_logo.png" alt="Auto Lease Logo" />
                 <div class="header_group">
+                    <span class="menu_hamburger"><em class="fas fa-bars"></em></span>
                     <form>
                         <div class="header_search">
                             <input id="companyHierarchy" class="" data-options="" style="width:210px;" />
@@ -38,7 +39,7 @@
                         </li>
                     </ul>
                 </div>
-                <span class="menu_hamburger"><em class="fas fa-bars"></em></span>
+                
                 <nav>
                     <ul class="nav_parent">
                         <li> <a href="/" class="">Home</a> </li>
@@ -53,15 +54,15 @@
     </div>
 </header>
 
-<main>
+<main id="alm-data">
     <div class="container-fluid profile_bg">
         <div class="profile_line"></div>
-        <div class="container" id="alm-data">
+        <div class="container-fluid">
             <div class="row profile_row">
-                <div class="col-xs-12 col-md-12 col-lg-3">
+                <div class="col-lg-3">
                     <div class="profile_img s-profile_img"> <img src="images/company_logo.svg" alt="Company Name" /> </div>
                 </div>
-                <div class="col-xs-12 col-md-12 col-lg-9">
+                <div class="col-lg-9">
                     <div class="profile_data p-height">
                         <h1>City Wide Motors</h1>
                         <h4>MO</h4>
@@ -72,9 +73,9 @@
     </div>
 
     <div class="inside_content">
-        <div class="container" id="alm-data">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 col-md-12 col-lg-3 left_col collapse-left">
+                <div class="col-lg-3 left_col collapse-left">
                     <aside>
                         <em class="fas fa-angle-left"></em>
                         <div class="aside_data">
@@ -120,55 +121,55 @@
                         </div>
                     </aside>
                 </div>
-                <div class="col-xs-12 col-md-12 col-lg-9 mb-3 expand-content" id="content">
+                <div class="col-lg-9 pb-3 expand-content" id="content">
                     <section>
 
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <h3 class="article_title details_title">Customers</h3>
+                        <div class="row article_title">
+                            <div class="col col-md-6">
+                                <h3 class="details_title">Customers</h3>
                             </div>
-                                <div class="col-xs-12 col-md-6 text-right"> <a class="header_link" href="/Customers/AddCustomer"><img class="add_icon" src="images/add_icon.svg" alt="" /> Add Customer</a> </div>
+                            <div class="col col-md-6 text-right"> 
+                                <a class="header_link" href="/Customers/AddCustomer"><img class="add_icon" src="images/add_icon.svg" alt="" /> Add Customer</a> 
+                            </div>
                         </div>
                         <hr />
-                            <div class="row">
-                                <div class="col-lg-12" id="AlphabetFilterDiv" style="display: none;">
-                                    <div class="text-center filter-az">
-                                        <div id="customerAlphabetFilter" class="alphabetFilter">
+                        <div id="AlphabetFilterDiv" style="display: none;">
+                            <div class="text-center filter-az">
+                                <div id="customerAlphabetFilter" class="alphabetFilter">
 
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="filters" style="display:none;">
-                                    <select class="form-control w-4" id="customer_status" name="customer_status"><option value="">-- All Statuses --</option>
-    <option value="100000011">Cash Sale Customer</option>
-    <option selected="selected" value="100000010">Current Lessee</option>
-    <option value="100010623">Customer</option>
-    <option value="100000443">Do NOT Lease</option>
-    <option value="100000008">Past Lessee - Good Standing</option>
-    <option value="100000009">Past Lessee - Repossession</option>
-    <option value="100000007">Prospect</option>
-    <option value="100000012">Repossessed</option>
-    </select>
-                                    <a href="javascript:ToggleAlphabeticFilter('#AlphabetFilterDiv')">A-Z</a>
-                                </div>
-                                <table id="dataTableGrid" class="display alm-table" style="width:100%">
-                                    <caption></caption>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" class="d-none">Key</th>
-                                            <th scope="col">First Name</th>
-                                            <th scope="col">Last Name</th>
-                                            <th scope="col">Primary Phone</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Date Leased</th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Created Date</th>
-                                            <th scope="col">Options</th>
-                                            <th scope="col"></th>
-                                        </tr>
-                                    </thead>
-                                </table>
                             </div>
+                        </div>
+                        <div class="filters" style="display:none;">
+                            <select class="form-control w-4" id="customer_status" name="customer_status"><option value="">-- All Statuses --</option>
+                                <option value="100000011">Cash Sale Customer</option>
+                                <option selected="selected" value="100000010">Current Lessee</option>
+                                <option value="100010623">Customer</option>
+                                <option value="100000443">Do NOT Lease</option>
+                                <option value="100000008">Past Lessee - Good Standing</option>
+                                <option value="100000009">Past Lessee - Repossession</option>
+                                <option value="100000007">Prospect</option>
+                                <option value="100000012">Repossessed</option>
+                            </select>
+                            <a href="javascript:ToggleAlphabeticFilter('#AlphabetFilterDiv')">A-Z</a>
+                        </div>
+                        <table id="dataTableGrid" class="display alm-table" style="width:100%">
+                            <caption></caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="d-none">Key</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Primary Phone</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Date Leased</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Created Date</th>
+                                    <th scope="col">Options</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                        </table>
                     </section>
                 </div>
             </div>
@@ -178,7 +179,7 @@
 </main>
 
 <footer>
-    <div class="container">
+    <div class="container-fluid">
         <div class="text-center py-3 f-msg">
             <p>Copyright 2022 Copper Financial. All rights reserved.</p>
         </div>
