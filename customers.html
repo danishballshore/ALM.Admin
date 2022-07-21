@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Auto Lease Manager - Customers</title>
+    <!-- <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16"> -->
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="css/all.site.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+    <div class="container-fluid header_bg">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <img class="logo_img" src="images/ALS_logo.png" alt="Auto Lease Logo" />
+                <div class="header_group">
+                    <form>
+                        <div class="header_search">
+                            <input id="companyHierarchy" class="" data-options="" style="width:210px;" />
+                        </div>
+                    </form>
+                    <ul class="header_setting">
+                        <li>
+                            <em class="setting_icon fas fa-cog"></em>
+                            <ul class="header_setting_list header_list">
+                                <li><a href="/Administration/Users">Administration</a></li>
+                                <li><a href="/Site">Site Configuration</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="user_profile"> <img class="user_icon" alt="User" src="images/user_icon.svg"> </span>
+                            <ul class="header_user_list header_list">
+                                <li><a href="/Account/ChangePassword">Change Password</a></li>
+                                <li><a href="/Account/Logout">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <span class="menu_hamburger"><em class="fas fa-bars"></em></span>
+                <nav>
+                    <ul class="nav_parent">
+                        <li> <a href="/" class="">Home</a> </li>
+                        <li> <a class="" href="/Prospect">Prospects</a> </li>
+                        <li> <a class=" active_item" href="/Customers">Customers</a> </li>
+                        <li> <a class="" href="/Inventory">Inventory</a> </li>
+                        <li> <a class="" href="/Report">Reports</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container-fluid profile_bg">
+        <div class="profile_line"></div>
+        <div class="container" id="alm-data">
+            <div class="row profile_row">
+                <div class="col-xs-12 col-md-12 col-lg-3">
+                    <div class="profile_img s-profile_img"> <img src="images/company_logo.svg" alt="Company Name" /> </div>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-9">
+                    <div class="profile_data p-height">
+                        <h1>City Wide Motors</h1>
+                        <h4>MO</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="inside_content">
+        <div class="container" id="alm-data">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-3 left_col collapse-left">
+                    <aside>
+                        <em class="fas fa-angle-left"></em>
+                        <div class="aside_data">
+                            <ul>
+                                <li><em class="list_email"></em><div class="list-text">support@AutoDealergroup.com</div></li>
+                                    <li><em class="list_phone"></em><div class="list-text">(816) 765-8808</div></li>
+                            </ul>
+                            <div class="aside_block">
+                                <ul>
+                                    <li>
+                                        <em class="list_shortcut aside_block_icon"></em>
+                                        <div class="list-text">
+                                            <p class="aside_block_heading">Shortcuts</p>
+                                            <ul>
+                                                <li class="list_link"><a href="/Customers">View/Take Payment</a></li>
+                                                <li class="list_link"><a href="/Inventory/AddInventory">Add Inventory</a></li>
+                                                <li class="list_link"><a href="/Customers/AddCustomer">Add Customer</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aside_block">
+                                <ul>
+                                    <li><em class="list_inventory"></em><div class="list-text">Inventory: 375</div></li>
+                                    <li><em class="list_customer"></em><div class="list-text">Customers: 381</div></li>
+                                    <li><em class="list_prospect"></em><div class="list-text">Prospects: 0</div></li>
+                                </ul>
+                            </div>
+                            <div class="aside_block">
+                                <ul>
+                                    <li>
+                                        <em class="list_recent aside_block_icon"></em>
+                                        <div class="list-text">
+                                            <p class="aside_block_heading">Recent Selections</p>
+                                            <ul>
+                                                    <li class="list_link">No Recent Items</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-9 mb-3 expand-content" id="content">
+                    <section>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <h3 class="article_title details_title">Customers</h3>
+                            </div>
+                                <div class="col-xs-12 col-md-6 text-right"> <a class="header_link" href="/Customers/AddCustomer"><img class="add_icon" src="images/add_icon.svg" alt="" /> Add Customer</a> </div>
+                        </div>
+                        <hr />
+                            <div class="row">
+                                <div class="col-lg-12" id="AlphabetFilterDiv" style="display: none;">
+                                    <div class="text-center filter-az">
+                                        <div id="customerAlphabetFilter" class="alphabetFilter">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filters" style="display:none;">
+                                    <select class="form-control w-4" id="customer_status" name="customer_status"><option value="">-- All Statuses --</option>
+    <option value="100000011">Cash Sale Customer</option>
+    <option selected="selected" value="100000010">Current Lessee</option>
+    <option value="100010623">Customer</option>
+    <option value="100000443">Do NOT Lease</option>
+    <option value="100000008">Past Lessee - Good Standing</option>
+    <option value="100000009">Past Lessee - Repossession</option>
+    <option value="100000007">Prospect</option>
+    <option value="100000012">Repossessed</option>
+    </select>
+                                    <a href="javascript:ToggleAlphabeticFilter('#AlphabetFilterDiv')">A-Z</a>
+                                </div>
+                                <table id="dataTableGrid" class="display alm-table" style="width:100%">
+                                    <caption></caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="d-none">Key</th>
+                                            <th scope="col">First Name</th>
+                                            <th scope="col">Last Name</th>
+                                            <th scope="col">Primary Phone</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Date Leased</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Created Date</th>
+                                            <th scope="col">Options</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="text-center py-3 f-msg">
+            <p>Copyright 2022 Copper Financial. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/all.site.min.js"></script>
+<script>
+    var isHaveViewPermission = "True".toLowerCase();
+
+    var filters = {
+        sub_company: null,
+        name_initial: null,
+        customer_status: null
+    };
+
+    function GetCustomersList() {
+
+        var val = $('#customer_status option:selected').val();
+        filters.customer_status = val;
+
+        $('#dataTableGrid').DataTable(
+        {
+            order: [[5, "desc"]],
+            language: {
+                "emptyTable": "No record(s) to display."
+            },
+            ajax: {
+                url: "/Customers/List",
+                type: "POST",
+                datatype: "json",
+                contentType: "application/x-www-form-urlencoded",
+                data: filters
+                },
+                //fnServerParams: function (data) {
+
+                //    debugger;
+                //    data['order'].forEach(function(items, index) {
+                //        data['order'][index]['column_name'] = data['columns'][items.column]['data'];
+                //        });
+                //},
+            columns: [
+                { data: "cst_key_enc", name: "cst_key_enc", autoWidth: true, searchable: false, visible: false },
+                {
+                    render: function (data, type, full, meta)
+                    {
+                        if (isHaveViewPermission == "true") {
+                            return '<a href="/Lease/' + full.cst_key_enc + '/Leases">' + full.first_name + '</a>';
+                        }
+                        else {
+                            return  full.first_name;
+                        }
+                    },
+                    name: "first_name", autoWidth: true
+                },
+                {
+                    render: function (data, type, full, meta)
+                    {
+                        if (isHaveViewPermission == "true") {
+                            return '<a href="/Lease/' + full.cst_key_enc + '/Leases">' + full.last_name + '</a>';
+                        } else {
+                            return full.last_name;
+                        }
+                    },
+                    name: "last_name", autoWidth: true
+                },
+                { data: "primary_phone", name: "primary_phone", autoWidth: true },
+                { data: "cst_email", name: "cst_email", autoWidth: true },
+                {
+                    name: "latest_lease_date",
+                    orderable: true,
+                    searchable: true,
+                    render: function (data, type, full, meta) {
+                        return FormatDate(full.latest_lease_date);
+                    }
+                },
+                { data: "status", name: "status", autoWidth: true },
+                {
+                    name: "created_date",
+                    orderable: true,
+                    searchable: true,
+                    render: function (data, type, full, meta)
+                    {
+                        return FormatDate(full.created_date);
+                    }
+                },
+                {
+                    name: "options",
+                    orderable: false,
+                    searchable: false,
+                    render: function (data, type, full, meta)
+                    {
+                        if (full.total_leases > 1) {
+                            return '<a href="/Lease/' + full.cst_key_enc + '/Leases">Take Payment</a>';
+                        }
+                        else if (full.total_leases == 1) {
+                            return '<a href="/Lease/' + full.cst_key_enc + '/TakePayment?LeaseId=' + full.random_lease_enc_id + '">Take Payment</a>';
+                        }
+                        else if (full.total_leases <= 0) {
+                            return "";
+                        }
+                        return FormatDate(full.created_date);
+                    },
+
+                }
+                ,{ 
+                    //data: "total_leases_active", 
+                    name: "total_leases_active", 
+                    autoWidth: true, 
+                    searchable: false, 
+                    render: function (data, type, full, meta)
+                    {
+                        var span = '';
+                        if(full.total_leases_active > 0)
+                        {
+                            span = span + '<span class="badge badge-success" title="Total Active Leases">' + full.total_leases_active + '</span>&nbsp;';
+                        }
+                        if(full.total_leases_terminated > 0)
+                        {
+                            span = span + '<span class="badge badge-danger" title="Total Terminated Leases">' + full.total_leases_terminated + '</span>';
+                        }
+                        return span;
+                    }
+                }
+            ]
+        });
+    }
+
+    $('#sub_company').change(function () {
+        var val = $('#sub_company option:selected').val();
+        filters.sub_company = val;
+
+        DestroyDatatable("#dataTableGrid");
+
+        GetCustomersList();
+    });
+
+    $('#customer_status').change(function () {
+        var val = $('#customer_status option:selected').val();
+        filters.customer_status = val;
+
+        DestroyDatatable("#dataTableGrid");
+
+        GetCustomersList();
+    });
+
+    $(function () {
+
+        RenderAlphabetsContainer("javascript:FilterByInitials(");
+
+    });
+
+    function FilterByInitials(val) {
+
+        filters.name_initial = val;
+
+        $('.alphabetFilter a.active').removeClass('active');
+
+        if (val == undefined)
+            val = "All";
+
+        $(".alphabetFilter #" + val).addClass('active');
+
+        DestroyDatatable("#dataTableGrid");
+
+        GetCustomersList();
+
+    }
+
+    GetCustomersList();
+
+    if (nToastNotify) {
+        nToastNotify.init({
+            firstLoadEvent: 'DOMContentLoaded',
+            messages: [],
+            responseHeaderKey: 'X-NToastNotify-Messages',
+            requestHeaderKey: 'X-Requested-With',
+            libraryDetails:{"varName":"toastr","scriptSrc":"https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js","styleHref":"https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"},
+            disableAjaxToasts:false
+        });
+    };
+
+    var oVal = "";
+    var nVal = "";
+
+    $(document).ready(function () {
+        $(".profile_data .nav-item a.nav-link").click(function () {
+            $(this).next("div").slideToggle();
+        });
+    });
+
+    $('#companyHierarchy').combotree({
+        url: '/Base/GetCompanyHierarchy',
+        onChange: function (newValue, oldValue) {
+
+            if (oldValue != "") {
+                $.ajax({
+                    url: "/Base/" + newValue + "/UpdateCompanySelection",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (response) {
+                       
+                        if (response.result) {
+                            if (response.r_url != "") {
+                                window.location = response.r_url;
+                            }
+                            else {
+                                window.location.reload();
+                            }
+                        }
+                        else {
+                            $('#companyHierarchy').combotree('setValue', oldValue);
+                            ErrorPopup(response.msg);
+                        }
+                    }
+                });
+            }
+        },
+        onBeforeSelect: function (node) {
+
+            if (node.id.toString().indexOf("-") !== -1) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        },
+        onLoadSuccess: function (node, data) {
+            GetCurrentCompany();
+        }
+    });
+
+    function GetCurrentCompany() {
+        $.ajax({
+            url: "/Base/GetCurrentCompany",
+            type: "GET",
+            dataType: "json",
+            success: function (response) {
+                $('#companyHierarchy').combotree('setValue', response.result);
+            }
+        });
+    }
+    
+</script>
+</body>
+</html>

@@ -419,71 +419,73 @@ ul#als_tabs li a {
         margin-bottom: 7px;
     }
 
-        .aside_data ul li:last-child {
-            padding-bottom: 0px;
-        }
+.aside_data ul li:last-child {
+    padding-bottom: 0px;
+}
 
-        .aside_data ul li i::before {
-            padding-right: 10px;
-            min-width: 20px;
-            display: inline-block;
-            -webkit-transition: all .7s ease-in-out .3s;
-            transition: all .7s ease-in-out .3s;
-        }
+.aside_data ul li i::before {
+    padding-right: 10px;
+    min-width: 20px;
+    display: inline-block;
+    -webkit-transition: all .7s ease-in-out .3s;
+    transition: all .7s ease-in-out .3s;
+}
 
-        .bottom-arrow-icon {
-            content: url(../images/bottom-arrow.svg);
-            width: 44px;
-        }
+.bottom-arrow-icon {
+    content: url(../images/bottom-arrow.svg);
+    width: 44px;
+}
 
-        .top-arrow-icon {
-            content: url(../images/top-arrow.svg);
-            width: 44px;
-        }
+.top-arrow-icon {
+    content: url(../images/top-arrow.svg);
+    width: 44px;
+}
 
-        .aside_data ul li a::before {
-            padding-right: 10px;
-        }
+.aside_data ul li a::before {
+    padding-right: 10px;
+}
+.aside_data ul li em{
+    
+}
+.aside_data ul li em.list_shortcut::before {
+    content: url(../images/shortcut_icon.svg);
+}
 
-        .aside_data ul li em.list_shortcut::before {
-            content: url(../images/shortcut_icon.svg);
-        }
+.aside_data ul li em.list_payment::before {
+    content: url(../images/payment_icon.svg);
+}
 
-        .aside_data ul li em.list_payment::before {
-            content: url(../images/payment_icon.svg);
-        }
+.aside_data ul li em.list_recent::before {
+    content: url(../images/recent_icon.svg);
+}
 
-        .aside_data ul li em.list_recent::before {
-            content: url(../images/recent_icon.svg);
-        }
+.aside_data ul li em.list_email::before {
+    content: url(../images/email_icon.svg);
+}
 
-        .aside_data ul li em.list_email::before {
-            content: url(../images/email_icon.svg);
-        }
+.aside_data ul li em.list_phone::before {
+    content: url(../images/phone_icon.svg);
+}
 
-        .aside_data ul li em.list_phone::before {
-            content: url(../images/phone_icon.svg);
-        }
+.aside_data ul li em.list_lease::before {
+    content: url("../images/lease_icon.svg");
+}
 
-        .aside_data ul li em.list_lease::before {
-            content: url("../images/lease_icon.svg");
-        }
+.aside_data ul li em.list_life::before {
+    content: url("../images/lifetime_icon.svg");
+}
 
-        .aside_data ul li em.list_life::before {
-            content: url("../images/lifetime_icon.svg");
-        }
+.aside_data ul li em.list_lead::before {
+    content: url("../images/lead_icon.svg");
+}
 
-        .aside_data ul li em.list_lead::before {
-            content: url("../images/lead_icon.svg");
-        }
+.aside_data ul li em.list_company::before {
+    content: url("../images/company_icon.svg");
+}
 
-        .aside_data ul li em.list_company::before {
-            content: url("../images/company_icon.svg");
-        }
-
-        .aside_data ul li em.list_link a::before {
-            content: url("../images/link_icon.svg");
-        }
+.aside_data ul li em.list_link a::before {
+    content: url("../images/link_icon.svg");
+}
 
 .aside_block {
     border-top: 1px solid #CECECE;
@@ -2323,301 +2325,301 @@ table.alm-table-nested {
     }
 }
 
-    @media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
 
-        #content {
-            min-height: 74vh;
+    #content {
+        min-height: 74vh;
+    }
+
+    .lease-data-img{
+        width: 200px;
+    }
+
+    .card-height {
+        min-height: 180px;
+    }
+
+    .left_col.collapse-left {
+        max-width: 8%;
+    }
+
+    .expand-content {
+        max-width: 92%;
+        flex: 0 0 92%;
+    }
+
+    nav ul {
+        display: inline-flex;
+        list-style: none;
+        margin: 0px;
+        padding: 0;
+    }
+
+        nav ul li {
+            position: relative;
         }
 
-        .lease-data-img{
-            width: 200px;
-        }
-
-        .card-height {
-            min-height: 180px;
-        }
-
-        .left_col.collapse-left {
-            max-width: 8%;
-        }
-
-        .expand-content {
-            max-width: 92%;
-            flex: 0 0 92%;
-        }
-
-        nav ul {
-            display: inline-flex;
-            list-style: none;
-            margin: 0px;
-            padding: 0;
-        }
-
-            nav ul li {
-                position: relative;
+            nav ul li a {
+                font-size: 18px;
+                font-weight: 500;
+                color: #898889;
+                padding: 22px 35px;
+                display: flex;
+                text-decoration: none;
             }
 
-                nav ul li a {
-                    font-size: 18px;
-                    font-weight: 500;
-                    color: #898889;
-                    padding: 22px 35px;
-                    display: flex;
+                nav ul li a:hover {
+                    background: #fff;
                     text-decoration: none;
+                    color: #004A6D;
                 }
 
-                    nav ul li a:hover {
-                        background: #fff;
-                        text-decoration: none;
-                        color: #004A6D;
-                    }
+                nav ul li a.active_item {
+                    background-color: #fff;
+                    color: #004A6D;
+                    font-weight: 800;
+                }
 
-                    nav ul li a.active_item {
-                        background-color: #fff;
-                        color: #004A6D;
-                        font-weight: 800;
-                    }
+                nav ul li a em {
+                    display: none !important;
+                }
 
-                    nav ul li a em {
-                        display: none !important;
-                    }
-
-            nav ul ul {
-                display: none;
-                position: absolute;
-                background: #F4F4F4;
-                width: 190px;
-                z-index: 999;
-            }
-
-            nav ul li:hover a + ul.nav_child {
-                display: block;
-            }
-
-            nav ul ul li a {
-                border-bottom: 1px solid #CECECE;
-                font-size: 14px;
-                padding: 10px;
-            }
-
-            nav ul ul li:hover a + ul.nav_subchild {
-                display: block;
-            }
-
-            nav ul ul ul {
-                top: 0;
-                left: 100%;
-            }
-
-        span.menu_hamburger em {
+        nav ul ul {
             display: none;
-            min-width: 1000px
-        }
-
-        .header_bg nav {
-            display: inline-flex;
-        }
-
-        #ucl-data .ucl_hamburger {
-            display: none
-        }
-
-        .profile_img {
-            background: #fff;
-            border-radius: 100%;
-            height: 182px;
-            width: 182px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             position: absolute;
-            right: 0;
-            left: 0;
-            margin-left: auto;
-            margin-right: auto;
-            z-index: 9;
-            -webkit-transition: all .7s ease-in-out .3s;
-            transition: all .7s ease-in-out .3s;
+            background: #F4F4F4;
+            width: 190px;
+            z-index: 999;
         }
 
-        .s-profile_img {
-            width: 120px;
-            height: 120px;
-        }
-
-            .s-profile_img img {
-                height: 80px;
-            }
-    }
-
-    @media only screen and (min-width: 1300px) {
-        .left_col.collapse-left {
-            max-width: 6.5%;
-        }
-
-        .expand-content {
-            max-width: 93%;
-            flex: 0 0 93%;
-        }
-    }
-
-    @media only screen and (min-width: 1600px) {
-        .left_col.collapse-left {
-            max-width: 5.5%;
-        }
-    }
-
-    @media only screen and (max-width: 992px) {
-
-        .search-v-body .search-right .search-title {
-            width: 50%;
-        }
-
-        .search-v-body .search-right .search-value {
-            width: 50%;
-        }
-
-        .search-v-body .search-right .search-title.VIN {
-            width: 50%;
-        }
-
-        .search-v-body .search-right .search-value.VIN {
-            width: 50%;
-        }
-
-        .search-v-body .search-left a {
-            top: 0;
-            right: 15px;
-        }
-
-        .dataTables_wrapper .dataTables_info {
-            clear: both;
-            float: right;
-            text-align: right;
-            padding-top: .755em;
-        }
-
-        .dataTables_wrapper .dataTables_paginate {
-            float: none;
-            text-align: center;
-            padding-top: 1rem;
-        }
-
-        .aside_data {
-            display: none;
-        }
-
-        .profile_img {
-            display: none;
-        }
-
-        #alm-data {
-            max-width: 100%
-        }
-
-        img.logo_img {
-            padding: 24px 0px;
-            width: 150px;
-        }
-
-        span.menu_hamburger em {
-            float: right;
-            background: #fff;
-            border-radius: 100%;
-            height: 32px;
-            width: 32px;
-            display: flex;
-            justify-content: center;
-            color: #1E5975;
-            align-items: center;
-            margin: 20px 20px;
-            border: 1px solid #1E5975;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0px;
-            padding: 0;
-            background: #fff;
-            display: none;
-        }
-
-            nav ul li {
-                position: relative;
-            }
-
-                nav ul li a, nav ul li a:hover, nav ul li a:focus {
-                    color: #222;
-                    text-decoration: none;
-                    display: block;
-                    padding: 10px 10px;
-                    font-weight: 400;
-                }
-
-                    nav ul li a em {
-                        float: right;
-                        padding-right: 10px;
-                        padding-top: 5px
-                    }
-
-            nav ul > li.opened > a > em {
-                -webkit-transform: rotate(180deg);
-                -moz-transform: rotate(180deg);
-                -ms-transform: rotate(180deg);
-                -o-transform: rotate(180deg);
-                transform: rotate(180deg);
-                padding-left: 10px;
-                padding-bottom: 5px;
-            }
-
-            nav ul ul {
-                display: none;
-                padding-left: 10px
-            }
-
-                nav ul ul li a {
-                    padding: 5px 10px !important;
-                }
-
-        .open-menu {
+        nav ul li:hover a + ul.nav_child {
             display: block;
         }
 
-        ul.header_setting li:nth-child(1) {
-            display: none;
+        nav ul ul li a {
+            border-bottom: 1px solid #CECECE;
+            font-size: 14px;
+            padding: 10px;
         }
 
-        .header_group .user_profile {
-            background: #fff;
-            border-radius: 100%;
-            height: 32px;
-            width: 32px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #1E5975;
-            margin: 20px 0px;
+        nav ul ul li:hover a + ul.nav_subchild {
+            display: block;
         }
 
-        .header_bg nav {
-            width: 100%;
-            display: inline-block;
-            float: left;
+        nav ul ul ul {
+            top: 0;
+            left: 100%;
         }
 
-        #ucl-data .aside_data {
-            height: auto !important;
-            display: none;
-        }
-
-        .left_col {
-            display: none !important;
-        }
-
-        footer .container {
-            max-width: 100%;
-        }
+    span.menu_hamburger em {
+        display: none;
+        min-width: 1000px
     }
+
+    .header_bg nav {
+        display: inline-flex;
+    }
+
+    #ucl-data .ucl_hamburger {
+        display: none
+    }
+
+    .profile_img {
+        background: #fff;
+        border-radius: 100%;
+        height: 182px;
+        width: 182px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 9;
+        -webkit-transition: all .7s ease-in-out .3s;
+        transition: all .7s ease-in-out .3s;
+    }
+
+    .s-profile_img {
+        width: 120px;
+        height: 120px;
+    }
+
+        .s-profile_img img {
+            height: 80px;
+        }
+}
+
+@media only screen and (min-width: 1300px) {
+    .left_col.collapse-left {
+        max-width: 6.5%;
+    }
+
+    .expand-content {
+        max-width: 93%;
+        flex: 0 0 93%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .left_col.collapse-left {
+        max-width: 5.5%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .search-v-body .search-right .search-title {
+        width: 50%;
+    }
+
+    .search-v-body .search-right .search-value {
+        width: 50%;
+    }
+
+    .search-v-body .search-right .search-title.VIN {
+        width: 50%;
+    }
+
+    .search-v-body .search-right .search-value.VIN {
+        width: 50%;
+    }
+
+    .search-v-body .search-left a {
+        top: 0;
+        right: 15px;
+    }
+
+    .dataTables_wrapper .dataTables_info {
+        clear: both;
+        float: right;
+        text-align: right;
+        padding-top: .755em;
+    }
+
+    .dataTables_wrapper .dataTables_paginate {
+        float: none;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .aside_data {
+        display: none;
+    }
+
+    .profile_img {
+        display: none;
+    }
+
+    #alm-data {
+        max-width: 100%
+    }
+
+    img.logo_img {
+        padding: 24px 0px;
+        width: 150px;
+    }
+
+    span.menu_hamburger em {
+        float: right;
+        background: #fff;
+        border-radius: 100%;
+        height: 32px;
+        width: 32px;
+        display: flex;
+        justify-content: center;
+        color: #1E5975;
+        align-items: center;
+        margin: 20px 20px;
+        border: 1px solid #1E5975;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0;
+        background: #fff;
+        display: none;
+    }
+
+        nav ul li {
+            position: relative;
+        }
+
+            nav ul li a, nav ul li a:hover, nav ul li a:focus {
+                color: #222;
+                text-decoration: none;
+                display: block;
+                padding: 10px 10px;
+                font-weight: 400;
+            }
+
+                nav ul li a em {
+                    float: right;
+                    padding-right: 10px;
+                    padding-top: 5px
+                }
+
+        nav ul > li.opened > a > em {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+            padding-left: 10px;
+            padding-bottom: 5px;
+        }
+
+        nav ul ul {
+            display: none;
+            padding-left: 10px
+        }
+
+            nav ul ul li a {
+                padding: 5px 10px !important;
+            }
+
+    .open-menu {
+        display: block;
+    }
+
+    ul.header_setting li:nth-child(1) {
+        display: none;
+    }
+
+    .header_group .user_profile {
+        background: #fff;
+        border-radius: 100%;
+        height: 32px;
+        width: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #1E5975;
+        margin: 20px 0px;
+    }
+
+    .header_bg nav {
+        width: 100%;
+        display: inline-block;
+        float: left;
+    }
+
+    #ucl-data .aside_data {
+        height: auto !important;
+        display: none;
+    }
+
+    .left_col {
+        display: none !important;
+    }
+
+    footer .container {
+        max-width: 100%;
+    }
+}
 
 @media only screen and (min-width: 600px) {
 
@@ -2654,258 +2656,258 @@ table.alm-table-nested {
     }
 }
 
-    @media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
 
-        #existingSettings {
-            border-right: 1px solid #cecece;
-        }
-        .aside_data ul li em.list_inventory:before {
-            content: url("../images/inventory_icon.svg");
-        }
-
-        .aside_data ul li em.list_customer:before {
-            content: url("../images/team.svg");
-        }
-
-        .aside_data ul li em.list_prospect:before {
-            content: url("../images/prospect.svg");
-        }
-
-        button.profile_edit {
-            position: absolute;
-            right: 0;
-            top: 0;
-            background: transparent;
-            border: 1px solid #fff;
-            padding: 4px 8px;
-            border-radius: 2px;
-            outline: none;
-        }
-
-        ul#als_tabs {
-            position: absolute;
-            bottom: 0;
-            border: none;
-            z-index: 2;
-        }
-
-        ul.profile_edit_list {
-            position: absolute;
-            right: 0;
-            top: 36px;
-            background: #F4F4F4;
-            z-index: 99;
-            min-width: 20%;
-            list-style: none;
-            padding: 0px;
-            display: none;
-        }
-
-        ul.header_setting li:hover em + ul {
-            display: block;
-        }
-
-        ul.header_setting li:hover span + ul {
-            display: block;
-        }
-
-
-        .w-zip {
-            width: 9rem;
-        }
+    #existingSettings {
+        border-right: 1px solid #cecece;
+    }
+    .aside_data ul li em.list_inventory:before {
+        content: url("../images/inventory_icon.svg");
     }
 
-    @media only screen and (max-width: 769px) {
+    .aside_data ul li em.list_customer:before {
+        content: url("../images/team.svg");
+    }
 
-        .payment-container button.btn {
-            margin-bottom: 10px;
-        }
+    .aside_data ul li em.list_prospect:before {
+        content: url("../images/prospect.svg");
+    }
 
-        h3.article_title {
-            font-weight: bold;
-            padding: 10px 0px 0px;
-            color: #004A6D;
-            padding-left: 40px;
-        }
+    button.profile_edit {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: transparent;
+        border: 1px solid #fff;
+        padding: 4px 8px;
+        border-radius: 2px;
+        outline: none;
+    }
 
-        .header_link {
-            padding: 0;
-        }
+    ul#als_tabs {
+        position: absolute;
+        bottom: 0;
+        border: none;
+        z-index: 2;
+    }
 
-        .filters #sub_company {
-            width: 15rem;
-        }
+    ul.profile_edit_list {
+        position: absolute;
+        right: 0;
+        top: 36px;
+        background: #F4F4F4;
+        z-index: 99;
+        min-width: 20%;
+        list-style: none;
+        padding: 0px;
+        display: none;
+    }
 
-        .profile_img img {
-            height: 40px;
-        }
+    ul.header_setting li:hover em + ul {
+        display: block;
+    }
 
-        button.profile_edit {
-            background: transparent;
-            border: 1px solid #fff;
-            padding: 4px 8px;
-            border-radius: 2px;
-            outline: none;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-
-        ul.profile_edit_list {
-            background: #F4F4F4;
-            z-index: 99;
-            padding: 0px;
-            -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.4);
-            -moz-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.4);
-            box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.4);
-            display: none;
-            position: absolute;
-            width: 100%;
-            top: 40px;
-        }
-
-        .right_border {
-            border-right: none;
-        }
-
-        p.lease_data_value {
-            width: 100%;
-        }
-
-        p.lease_data_title {
-            width: 100%;
-        }
-
-        .profile_data {
-            color: #fff;
-            position: relative;
-            min-height: 130px;
-            height: auto;
-            z-index: 3;
-        }
-
-        .filters a {
-            display: none;
-        }
-        /*Gallery code starts here*/
-        .slider-thumbnail {
-            width: 220px;
-        }
-
-        /*Gallery page ends here*/
-
-        .img-modal-content {
-            width: 100%;
-        }
-
+    ul.header_setting li:hover span + ul {
+        display: block;
     }
 
 
-    @media only screen and (max-width: 576px) {
-
-        .login_data .input_field {
-            width: 320px;
-        }
-
-        div#alm-data section article .text-right {
-            text-align: left !important;
-        }
-
-
-            div#alm-data section article .text-right a {
-                margin-left: 0px !important;
-                padding-top: 10px;
-                width: 50%;
-                float: left;
-            }
-
-        .tab-content .tab-pane.active div.text-right {
-            text-align: left !important;
-        }
-
-            .tab-content .tab-pane.active div.text-right a {
-                margin-left: 0px !important;
-                padding-top: 10px;
-                width: 50%;
-                float: left;
-            }
-
-        .filters #sub_company {
-            width: 100%;
-        }
-
-        div.dataTables_filter label {
-            width: 100%;
-        }
-
-            div.dataTables_filter label input {
-                width: 100%;
-            }
-
-        table.alm-table {
-            display: block;
-            overflow-y: scroll;
-        }
-
-        .filters {
-            display: block;
-            justify-content: space-around;
-            width: 100%;
-            float: none;
-        }
-
-        .login_data {
-            padding: 40px 30px;
-        }
-
-        img.logo_img {
-            display: block;
-            margin: 0px auto;
-        }
-
-        .header_group .user_profile {
-            margin: 20px 10px;
-        }
-
-        span.menu_hamburger em {
-            margin: 20px 10px;
-        }
-
-        .profile_data h1 {
-            width: 70%;
-        }
-
-        .lease_row {
-            border-bottom: 1px solid #cecece;
-            padding-bottom: 15px;
-            margin-bottom: 15px;
-        }
-
-        .alm-r-header {
-            display: block;
-        }
-
-        div.dataTables_length {
-            text-align: left;
-        }
-
-
-        div.dataTables_info {
-            text-align: right;
-        }
-        /*Gallery code starts here*/
-        .gallery-images .gallery-slider {
-            min-height: 360px;
-        }
-
-            .gallery-images .gallery-slider img.slider-zoom {
-                height: 360px;
-                width: 100%;
-            }
-
-        .lease_line {
-            margin: 0px;
-            height: 0px;
-            background: transparent;
-        }
+    .w-zip {
+        width: 9rem;
     }
+}
+
+@media only screen and (max-width: 769px) {
+
+    .payment-container button.btn {
+        margin-bottom: 10px;
+    }
+
+    h3.article_title {
+        font-weight: bold;
+        padding: 10px 0px 0px;
+        color: #004A6D;
+        padding-left: 40px;
+    }
+
+    .header_link {
+        padding: 0;
+    }
+
+    .filters #sub_company {
+        width: 15rem;
+    }
+
+    .profile_img img {
+        height: 40px;
+    }
+
+    button.profile_edit {
+        background: transparent;
+        border: 1px solid #fff;
+        padding: 4px 8px;
+        border-radius: 2px;
+        outline: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    ul.profile_edit_list {
+        background: #F4F4F4;
+        z-index: 99;
+        padding: 0px;
+        -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.4);
+        -moz-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.4);
+        box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.4);
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 40px;
+    }
+
+    .right_border {
+        border-right: none;
+    }
+
+    p.lease_data_value {
+        width: 100%;
+    }
+
+    p.lease_data_title {
+        width: 100%;
+    }
+
+    .profile_data {
+        color: #fff;
+        position: relative;
+        min-height: 130px;
+        height: auto;
+        z-index: 3;
+    }
+
+    .filters a {
+        display: none;
+    }
+    /*Gallery code starts here*/
+    .slider-thumbnail {
+        width: 220px;
+    }
+
+    /*Gallery page ends here*/
+
+    .img-modal-content {
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    .login_data .input_field {
+        width: 320px;
+    }
+
+    div#alm-data section article .text-right {
+        text-align: left !important;
+    }
+
+
+        div#alm-data section article .text-right a {
+            margin-left: 0px !important;
+            padding-top: 10px;
+            width: 50%;
+            float: left;
+        }
+
+    .tab-content .tab-pane.active div.text-right {
+        text-align: left !important;
+    }
+
+        .tab-content .tab-pane.active div.text-right a {
+            margin-left: 0px !important;
+            padding-top: 10px;
+            width: 50%;
+            float: left;
+        }
+
+    .filters #sub_company {
+        width: 100%;
+    }
+
+    div.dataTables_filter label {
+        width: 100%;
+    }
+
+        div.dataTables_filter label input {
+            width: 100%;
+        }
+
+    table.alm-table {
+        display: block;
+        overflow-y: scroll;
+    }
+
+    .filters {
+        display: block;
+        justify-content: space-around;
+        width: 100%;
+        float: none;
+    }
+
+    .login_data {
+        padding: 40px 30px;
+    }
+
+    img.logo_img {
+        display: block;
+        margin: 0px auto;
+    }
+
+    .header_group .user_profile {
+        margin: 20px 10px;
+    }
+
+    span.menu_hamburger em {
+        margin: 20px 10px;
+    }
+
+    .profile_data h1 {
+        width: 70%;
+    }
+
+    .lease_row {
+        border-bottom: 1px solid #cecece;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .alm-r-header {
+        display: block;
+    }
+
+    div.dataTables_length {
+        text-align: left;
+    }
+
+
+    div.dataTables_info {
+        text-align: right;
+    }
+    /*Gallery code starts here*/
+    .gallery-images .gallery-slider {
+        min-height: 360px;
+    }
+
+        .gallery-images .gallery-slider img.slider-zoom {
+            height: 360px;
+            width: 100%;
+        }
+
+    .lease_line {
+        margin: 0px;
+        height: 0px;
+        background: transparent;
+    }
+}
